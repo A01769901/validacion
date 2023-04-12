@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="efectos.css" rel="stylesheet" type="text/css">
+		<title>Contraseñas Reto	</title>
+		<script src="act_f.js" type="text/JavaScript"></script>
+	</head>
+	<body><center>
+		<br><br>
+		<h1 class="encabezado">Manejo de cuenta y contraseña</h1>
+		<br><br>
+		<table border="3" width="70%">
+			<form name="f_contra">
+				<tr align="center">
+					<td><p>Indica tu cuenta</p></td>
+					<td><input name="c_cta" type="text" class="campo" maxlength="10" onClick="campos_azules()"></td>
+				</tr>
+				<tr align="center">
+					<td><p>Indica tu contraseña</p></td>
+					<td><input name="c_pass" type="password" class="campo" maxlength="10" onClick="campos_azules()"> 
+						<img src="ojo_abierto.png" width="15" height="15" onClick="mostrar()">
+						<img src="ojo_cerrado.png" width="15" height="15" onClick="ocultar()">
+					</td>
+				</tr>
+				<tr align="center">
+					<td><input name="b_envia" type="button" class="boton_azul" value="Enviar" onClick="valida()"></td>
+					<td><input name="b_reset" type="reset" class="boton_rojo" value="Reiniciar"></td>
+				</tr>
+				<input name="intentos" type="hidden" value="0">
+			</form>
+		</table>
+	</center></body>
+</html>
